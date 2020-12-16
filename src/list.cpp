@@ -47,7 +47,10 @@ void List::delete_item() {
     if(list.size()) {
         for (int i = 0; i < (int)list.size(); i++){
             cout << i << ":" << list[i] << "\n";
-        }    
+        } 
+        int choicenum;
+        cin >> choicenum;
+        list.erase(list.begin() + choicenum);   
     }
     else {
         cout << "No items to delete. \n";
